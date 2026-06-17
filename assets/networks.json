@@ -1,0 +1,19 @@
+{
+  "atlantic": {
+    "name": "Pharos Atlantic Testnet",
+    "chainId": 688689,
+    "x402NetworkId": "eip155:688689",
+    "rpcUrl": "https://atlantic.dplabs-internal.com",
+    "explorerUrl": "https://atlantic.pharosscan.xyz",
+    "explorerApiUrl": "https://api.socialscan.io/pharos-atlantic-testnet/v1/explorer/command_api/contract",
+    "nativeSymbol": "PHRS"
+  },
+  "pacific": {
+    "name": "Pharos Pacific Mainnet",
+    "chainId": 1672,
+    "x402NetworkId": "eip155:1672",
+    "rpcUrl": "https://rpc.pharos.xyz",
+    "explorerUrl": "https://pharosscan.xyz",
+    "nativeSymbol": "PHRS"
+  }
+}

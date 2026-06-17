@@ -1,0 +1,6 @@
+Earnings dashboard for 0x73c37e8eddD9beF70FBbbe2861a8A776FABf1AA7
+Lifetime: $0.01 USDC
+Pending: $0.01
+Withdrawable: $0.00
+In dispute: $0.00
+Total payments: 1

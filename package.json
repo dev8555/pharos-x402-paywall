@@ -1,0 +1,50 @@
+{
+  "name": "pharos-x402-paywall",
+  "version": "1.1.0",
+  "description": "Monetize agent outputs with x402 micropayments on Pharos — paywall, autopay, and on-chain receipts",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "facilitator": "tsx src/facilitator.ts",
+    "server": "tsx src/server.ts",
+    "client": "tsx src/client.ts",
+    "dashboard": "tsx src/dashboard.ts",
+    "agent": "tsx src/agent-cli.ts",
+    "mcp": "tsx src/mcp/server.ts",
+    "build": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:contracts": "forge test -vv",
+    "test:all": "npm run build && npm run test && npm run test:contracts",
+    "deploy:mock-usdc": "forge script script/DeployMockUSDC.s.sol:DeployMockUSDC --rpc-url $RPC --private-key $PRIVATE_KEY --broadcast",
+    "lint": "eslint src test --ext .ts",
+    "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
+    "format:check": "prettier --check \"src/**/*.ts\" \"test/**/*.ts\""
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1",
+    "@openzeppelin/contracts": "^5.6.1",
+    "@x402/core": "^2.15.0",
+    "@x402/evm": "^2.15.0",
+    "@x402/express": "^2.15.0",
+    "@x402/fetch": "^2.15.0",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "viem": "^2.52.2"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/node": "^25.9.3",
+    "@types/supertest": "^6.0.3",
+    "@typescript-eslint/eslint-plugin": "^8.32.1",
+    "@typescript-eslint/parser": "^8.32.1",
+    "eslint": "^9.27.0",
+    "prettier": "^3.5.3",
+    "supertest": "^7.1.1",
+    "tsx": "^4.22.4",
+    "typescript": "^6.0.3",
+    "vitest": "^3.2.3"
+  }
+}

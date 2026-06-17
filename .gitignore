@@ -1,0 +1,12 @@
+.env
+.env.*
+!.env.example
+.private_key
+*.pem
+*.key
+node_modules/
+cache/
+out/
+broadcast/
+dist/
+lib/forge-std/
